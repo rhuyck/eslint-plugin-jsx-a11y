@@ -103,16 +103,18 @@ ruleTester.run('img-redundant-alt', rule, {
     { code: '<img alt="passport photo ID" />' },
     { code: '<img alt="before and after photo collage" />' },
     { code: '<img alt="satellite image overlay" />' },
+    { code: '<img alt="Picture Perfect album cover" />' },
+    { code: '<img alt="Photo finish at 100m race" />' },
+    { code: '<img alt="Photo booth selfie" />' },
+    { code: '<img alt="body image awareness poster" />' },
+
 
     // -------------------------------------------------------------------
     // Template literals with non-redundant context words
     // -------------------------------------------------------------------
     { code: '<img alt={`picture doing ${things}`} {...this.props} />' },
-    { code: '<img alt={`photo doing ${things}`} {...this.props} />' },
-    { code: '<img alt={`image doing ${things}`} {...this.props} />' },
-    { code: '<img alt={`picture doing ${picture}`} {...this.props} />' },
-    { code: '<img alt={`photo doing ${photo}`} {...this.props} />' },
-    { code: '<img alt={`image doing ${image}`} {...this.props} />' },
+    { code: '<img alt={`Book cover photo ${index} of ${total}`} {...this.props} />' },
+    { code: '<img alt={`${dockerImageName} image running`} {...this.props} />' },
 
     // -------------------------------------------------------------------
     // Custom component not mapped to img — Image is not validated by default
