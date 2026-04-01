@@ -108,7 +108,6 @@ ruleTester.run('img-redundant-alt', rule, {
     { code: '<img alt="Photo booth selfie" />' },
     { code: '<img alt="body image awareness poster" />' },
 
-
     // -------------------------------------------------------------------
     // Template literals with non-redundant context words
     // -------------------------------------------------------------------
